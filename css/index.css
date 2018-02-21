@@ -1,15 +1,16 @@
 body {
-
+    overflow-x: hidden;
 }
-nav, navbar-default {
+nav {
     background: none !important;
-    height: 30px !important;
+    min-height: 30px !important;
     line-height: 30px !important;
-    margin: 15px 10px !important;
+    margin: 5px 10px !important;
 }
 nav ul {
     display: inline;
-    padding: 0 30px !important;
+    padding: 10px 20px !important;
+    box-sizing: border-box !important;
 }
 .navbar-nav li a {
     color: black !important;;
@@ -76,4 +77,25 @@ nav ul li {
 }
 .no-margin {
     margin: 0 !important;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.location {
+    display: block;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+.nav-links {
+    display: block;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+.nav-links ul {
+    display: block;
+    height: 30px;
+    line-height: 40px;
 }
