@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
         <title>Google</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -30,11 +31,35 @@
                 </li>
             </ul>
         </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search">
+                        <div class="img-responsive home-page-img">
+                            <img src="img/google.gif" alt="">
+                        </div>
+                        <div class="searchFormDiv">
+                            <form>
+                                <div class="case-div">
+                                    <div class="input-case no-margin">
+                                        <input type="text" name="searchBox" id="searchBox">
+                                        <span class="error" aria-live="polite"></span>
+                                    </div>
+                                    <div class="mic-case img-responsive no-margin">
+                                        <img src="img/microphone.png" alt="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <div class="location">
                 <nav class="nav navbar-default no-margin">
                     <ul class="navbar navbar-nav navbar-left">
-                        <li><p>Nigeria</p></li>
+                        <li><p id="locate"></p></li>
                     </ul>
                 </nav>
             </div>
@@ -54,6 +79,14 @@
                 </nav>
             </div>
         </footer>
+        <script type="text/javascript">
+            let locate = document.getElementById('locate');
+
+            jsonpCallback = data => {
+                locate.innerHTML = data.address.country;
+                console.log(data);
+            }
+        </script>
         <script type="text/javascript" src="http://api.wipmania.com/jsonp?callback=jsonpCallback"></script>
     </body>
 </html>
