@@ -14,8 +14,14 @@ searchBox.addEventListener("submit", function (event) {
 
 form.addEventListener("submit", function (event) {
     if (searchBox.value == 0) {
-        error.innerHTML = "Oops! We can't search nothing... Please tell us what to search";
-        error.className = "error active";
+        error.style.opacity = '1';
+        error.innerHTML = "Oops! We can't search nothing... Please tell us what to search.";
+        error.className = "error animated shake";
+
+        setTimeout(() => {
+            error.style.opacity = '0';
+            error.className = "error";
+        }, 3000);
 
         event.preventDefault();
     } else {
