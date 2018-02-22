@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
 }
+/* Navigation/Footer style */
 nav {
     background: none !important;
     min-height: 30px !important;
@@ -25,6 +26,8 @@ nav ul li {
     margin: 0 .5pc;
     list-style-type: none;
 }
+
+/* -- Extra Divs in Navigation */
 .spec-links div {
     display: inline-block;
     width: 30px;
@@ -75,18 +78,23 @@ nav ul li {
     height: 100%;
     margin: 0;
 }
+/* Navigation Style end */
+
+/* Search Section start */
 .search {
     text-align: center;
 }
+/* -- Home page image */
 .home-page-img {
     position: relative;
     width: 40%;
     margin: 30px auto 50px auto;
-    border: 1px solid blue;
 }
 .home-page-img img {
     width: 100%;
 }
+
+/* -- Notification */
 .notifs {
     position: absolute;
     bottom: -50px;
@@ -103,6 +111,8 @@ nav ul li {
     opacity: 0;
     -webkit-transition: 1.5s;
 }
+
+/* -- Form */
 .searchFormDiv {
     width: 50%;
     margin: auto;
@@ -157,7 +167,7 @@ form .mic-case img {
     width: 20px;
     height: 30px;
 }
-
+/* -- buttons */
 .btns-house {
     width: 70%;
     margin: 30px auto 0 auto;
@@ -195,6 +205,9 @@ form .mic-case img {
     margin-left: 10px;
     float: left;
 }
+/* Search Section end */
+
+/* Languages Section start*/
 .languages-wrapper {
     text-align: center;
 }
@@ -204,7 +217,9 @@ form .mic-case img {
 .languages {
     margin: 30px auto 0 auto;
 }
+/* Languages Section end */
 
+/* Footer Section Start */
 .no-margin {
     margin: 0 !important;
 }
@@ -213,11 +228,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* -- Show Location Div*/
 .location {
     display: block;
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
 }
+
+/* --Footer Links Div */
 .nav-links {
     display: block;
     background-color: #f2f2f2;
@@ -229,10 +248,4 @@ footer {
     min-height: 30px;
     line-height: 50px;
 }
-
-
-@media (max-width: 780px) {
-    body {
-        overflow-x: scroll;
-    }
-}
+/* Footer Section End */

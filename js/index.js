@@ -28,6 +28,8 @@ form.addEventListener("submit", function (event) {
             setTimeout(() => {
                 notif.style.opacity = '0';
             }, 4000);
+
+            event.preventDefault();
         } else {
             notif.style.opacity = '1';
             notif.innerHTML = "Search execution cancelled!";
