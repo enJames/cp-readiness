@@ -1,0 +1,37 @@
+/* This is just to make the example nicer */
+body {
+  padding: 0;
+  margin : 0;
+}
+
+form .case-div input[type=text]{
+}
+
+/* This is our style for the invalid fields */
+form .case-div input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+form .case-div input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
