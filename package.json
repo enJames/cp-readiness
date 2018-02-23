@@ -4,7 +4,8 @@
   "description": "Week 4 exercise",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "node-sass -r --output-style nested --indent-type tab --indent-width 1 scss/ -o static-files/css",
+    "autoprefixer": "postcss -u autoprefixer -r static-files/css/*"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,11 @@
   },
   "homepage": "https://github.com/enJames/cp-readiness#readme",
   "devDependencies": {
+    "autoprefixer": "^8.0.0",
     "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^5.0.0"
   },
   "dependencies": {
     "nodemon": "^1.15.1"
