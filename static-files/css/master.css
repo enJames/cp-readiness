@@ -421,6 +421,10 @@ body {
 .tint-white-9 {
 	background-color: rgba(255, 255, 255, 0.9); }
 
+/* Spec BG-Color */
+.spec-color {
+	background-color: rgba(10, 20, 50, 0.7); }
+
 /*! Black */
 .tint-black-1 {
 	background-color: rgba(0, 0, 0, 0.1); }
@@ -624,5 +628,105 @@ body {
 
 /*!----------form styles----------*/
 /* ---------- Media Screen ------------ */
+body {
+	height: 100%; }
+
+section {
+	color: white; }
+	section .cover {
+		padding-bottom: 5%; }
+		section .cover .navbar, section .cover .navbar-default {
+			background: none;
+			border: none;
+			border-radius: 0 !important; }
+			section .cover .navbar ul, section .cover .navbar-default ul {
+				display: inline;
+				padding: 2.5rem 2rem;
+				margin-right: 2rem;
+				list-style: none; }
+				section .cover .navbar ul li, section .cover .navbar-default ul li {
+					margin-left: 2em; }
+					section .cover .navbar ul li a, section .cover .navbar-default ul li a {
+						font-size: 2rem;
+						opacity: .8; }
+						section .cover .navbar ul li a:hover, section .cover .navbar-default ul li a:hover {
+							color: white;
+							opacity: 1;
+							text-decoration: none; }
+	section h1 {
+		margin: 8% auto 0 auto;
+		font-size: 10rem;
+		font-weight: bolder; }
+	section p {
+		width: 50%;
+		margin: 3% auto 3% auto;
+		font-size: 2rem; }
+
 .section_1 {
-	background-image: url("../img/tech.jpg"); }
+	background-image: url("../img/epic.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white; }
+
+.section_2 {
+	color: black; }
+	.section_2 p {
+		width: 70%;
+		margin: 5% auto;
+		font-size: 3rem; }
+
+.section_3 {
+	background-image: url("../img/people.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed; }
+	.section_3 .para-point {
+		width: 100%;
+		font-size: 3rem; }
+	.section_3 p {
+		width: 70%; }
+
+.section_4 {
+	background-color: #0e71c6; }
+	.section_4 p {
+		width: 70%; }
+		.section_4 p q {
+			width: 80%;
+			font-size: 4rem; }
+
+footer {
+	background-color: #00143c;
+	color: white; }
+	footer .subscribe {
+		border: 1px solid red;
+		margin: 3% auto; }
+		footer .subscribe .description {
+			border: 1px solid green;
+			width: 350px; }
+			footer .subscribe .description h1 {
+				margin: 2px auto; }
+			footer .subscribe .description p {
+				margin-bottom: 2px; }
+		footer .subscribe .subcribe-form {
+			border: 1px solid blue; }
+			footer .subscribe .subcribe-form form {
+				background-color: white;
+				border-radius: 5px;
+				color: #00143c;
+				padding: 0;
+				margin: 0; }
+				footer .subscribe .subcribe-form form input {
+					width: 90%;
+					height: 40px;
+					border-radius: 5px;
+					border: none; }
+					footer .subscribe .subcribe-form form input:focus {
+						border: none; }
+				footer .subscribe .subcribe-form form button {
+					width: 22px height 40px; }
+		footer .subscribe .media-links {
+			width: 100%;
+			border: 1px solid yellow; }

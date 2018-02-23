@@ -1,6 +1,11 @@
 {
     "events": {
         "start": "npm run build-css",
-        "restart": "npm run build-css"
-    }
+        "restart": "npm run build-css",
+        "ext": "js css scss"
+    },
+    "watch": [
+        "scss/",
+        "views/"
+    ]
 }
