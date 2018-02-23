@@ -722,9 +722,10 @@ footer {
 					width: 90%;
 					height: 40px;
 					border-radius: 5px;
+					font-size: 3rem;
 					border: none; }
 					footer .subscribe .subcribe-form form input:focus {
-						border: none; }
+						outline: none; }
 				footer .subscribe .subcribe-form form button {
 					width: 22px height 40px; }
 		footer .subscribe .media-links {
