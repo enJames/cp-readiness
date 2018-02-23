@@ -662,6 +662,9 @@ section {
 		margin: 3% auto 3% auto;
 		font-size: 2rem; }
 
+#myNavbar {
+	overflow: visible; }
+
 .section_1 {
 	background-image: url("../img/epic.jpg");
 	background-repeat: no-repeat;
@@ -701,33 +704,73 @@ footer {
 	background-color: #00143c;
 	color: white; }
 	footer .subscribe {
-		border: 1px solid red;
-		margin: 3% auto; }
+		margin: 5% auto; }
 		footer .subscribe .description {
-			border: 1px solid green;
-			width: 350px; }
-			footer .subscribe .description h1 {
+			vertical-align: top;
+			display: inline-block;
+			width: 250px;
+			margin: 10px 40px 0 0; }
+			footer .subscribe .description h4 {
 				margin: 2px auto; }
 			footer .subscribe .description p {
-				margin-bottom: 2px; }
-		footer .subscribe .subcribe-form {
-			border: 1px solid blue; }
-			footer .subscribe .subcribe-form form {
+				margin-bottom: 3px; }
+		footer .subscribe .form-wrapper {
+			vertical-align: top;
+			display: inline-block;
+			width: 370px;
+			margin: 10px 40px 0 0; }
+			footer .subscribe .form-wrapper form {
 				background-color: white;
+				width: 100%;
 				border-radius: 5px;
 				color: #00143c;
-				padding: 0;
+				padding: 3px;
 				margin: 0; }
-				footer .subscribe .subcribe-form form input {
-					width: 90%;
+				footer .subscribe .form-wrapper form input {
+					display: inline-block;
+					width: 305px;
 					height: 40px;
+					line-height: 50px;
 					border-radius: 5px;
 					font-size: 3rem;
 					border: none; }
-					footer .subscribe .subcribe-form form input:focus {
+					footer .subscribe .form-wrapper form input:focus {
 						outline: none; }
-				footer .subscribe .subcribe-form form button {
-					width: 22px height 40px; }
+				footer .subscribe .form-wrapper form button {
+					display: inline-block;
+					background-color: #00143c;
+					vertical-align: top;
+					width: 50px;
+					height: 40px;
+					color: white;
+					font-weight: bold;
+					border: none;
+					border-radius: 0 5px 5px 0; }
+					footer .subscribe .form-wrapper form button:hover {
+						background-color: white;
+						color: #00143c;
+						border-left: 2px solid #00143c; }
 		footer .subscribe .media-links {
-			width: 100%;
-			border: 1px solid yellow; }
+			vertical-align: top;
+			display: inline-block;
+			width: 240px;
+			height: 48px;
+			line-height: 48px;
+			margin-top: 10px; }
+			footer .subscribe .media-links .fb, footer .subscribe .media-links .insta, footer .subscribe .media-links .twitter {
+				display: inline-block;
+				width: 46px;
+				height: 46px;
+				margin: 2px 30px 0px 0;
+				border-radius: 5px; }
+				footer .subscribe .media-links .fb:hover, footer .subscribe .media-links .insta:hover, footer .subscribe .media-links .twitter:hover {
+					background-color: white;
+					color: #00143c; }
+				footer .subscribe .media-links .fb span, footer .subscribe .media-links .insta span, footer .subscribe .media-links .twitter span {
+					font-size: 3.5rem;
+					padding: 2px;
+					line-height: 48px; }
+			footer .subscribe .media-links .twitter {
+				margin-right: 0; }
+	footer .copyright .year {
+		padding: 5px; }
