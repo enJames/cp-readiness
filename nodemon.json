@@ -1,5 +1,6 @@
 {
     "events": {
-        "start": "npm run build-css && npm run autoprefixer"
+        "start": "npm run build-css",
+        "restart": "npm run build-css"
     }
 }

@@ -6,6 +6,8 @@ let app = express();
 
 app.set('view engine', 'ejs');
 
+app.use(express.static('static-files'));
+
 mainController(app);
 
 app.listen(3000, () => {
