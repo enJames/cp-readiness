@@ -1,0 +1,31 @@
+{
+  "name": "prac-react",
+  "version": "1.0.0",
+  "description": "My name is Enejo James Oche, born October 29, 1989. I am from Okpokwu local governemnt in Benue State.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npm run build",
+    "build": "webpack -d && webpack-dev-server --watch-content-base src/app/ --port 6000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enJames/cp-readiness.git"
+  },
+  "author": "Enejo James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enJames/cp-readiness/issues"
+  },
+  "homepage": "https://github.com/enJames/cp-readiness#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
