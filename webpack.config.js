@@ -2,7 +2,9 @@
 let path = require('path');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 
-let htmlWebpackPlugin = new HtmlWebpackPlugin();
+let htmlWebpackPlugin = new HtmlWebpackPlugin({
+    template: "./src/app/index.html"
+});
 
 module.exports = {
 
