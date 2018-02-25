@@ -2,13 +2,15 @@
 let path = require('path');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 
+let htmlWebpackPlugin = new HtmlWebpackPlugin();
+
 module.exports = {
 
     entry: path.resolve(__dirname, 'src') + '/app/index.js',
     output: {
         path: path.resolve(__dirname, 'dist') + '/app',
         filename: 'bundle.js',
-        publicPath: '/app/'
+        publicPath: '/'
     },
     module: {
         loaders: [
@@ -25,5 +27,6 @@ module.exports = {
                 loader: 'style-loader!css-loader'
             }
         ]
-    }
+    },
+    plugins: [htmlWebpackPlugin]
 };
