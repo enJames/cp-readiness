@@ -1,7 +1,6 @@
 'use strict';
-const React = require('react');
-const ReactDOM = require('react-dom');
-const createReactClass = require('create-react-class');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 let hook = document.getElementById('hook');
 
