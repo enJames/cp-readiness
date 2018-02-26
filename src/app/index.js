@@ -18,8 +18,7 @@ export default class TodoApp extends React.Component{
     onChange(event){
         this.setState({
             term: event.target.value
-        })
-        console
+        });
     }
     onSubmit(event) {
         alert('Click!')
@@ -27,8 +26,7 @@ export default class TodoApp extends React.Component{
         this.setState({
             term: '',
             todos: [...this.state.todos, this.state.term]
-        })
-        console.log(this.state.term);
+        });
     }
     render() {
         return(
