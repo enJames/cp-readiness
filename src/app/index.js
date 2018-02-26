@@ -10,16 +10,34 @@ export default class TodoApp extends React.Component{
         this.state = {
             term: '',
             todos: []
-        }
+        };
+
+        this.onChange = this.onChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+    }
+    onChange(event){
+        this.setState({
+            term: event.target.value
+        })
+        console
+    }
+    onSubmit(event) {
+        alert('Click!')
+        event.preventDefault();
+        this.setState({
+            term: '',
+            todos: [...this.state.todos, this.state.term]
+        })
+        console.log(this.state.term);
     }
     render() {
         return(
             <div>
-                <form>
-                    <input/>
+                <form onSubmit={this.onSubmit}>
+                    <input value={this.state.term} onChange={this.onChange}/>
                     <button>Add Todo</button>
                 </form>
-                <List />
+                <List todos={this.state.todos}/>
             </div>
         )
     }

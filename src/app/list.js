@@ -2,9 +2,9 @@ import React from 'react';
 
 const List = props => (
     <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+        {
+            props.todos.map((todo, index) => <li key={index}>{todo}</li>)
+        }
     </ul>
 )
 
